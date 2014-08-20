@@ -1,0 +1,8 @@
+El programa se puede correr desde la terminal usando el comando:
+	python magic_square.py
+
+Te pide que escribas un numero, luego te informa la suma magica del cuadrado magico y te va imprimiendo cada cuadrado magico que va encontrando. 
+La clase MagicSquare tiene un metodo [fill(row,col)] que es llamado en el constructor con (0,0) como parametros. Esto quiere decir que va a empezar a llenar el cuadrado magico en la fila 0, columna 0. 
+En el constructor se inicializa la matriz, que es el cuadrado magico, con el numero que el usuario introduce al inicio, ademas inicializa un arreglo [possible[]], con el total de numeros que se van a usar, para ir checando si x numero [possible[x]] puede usarse o no. En el constructor tambien se calcula el resultado que debe tener la suma magica.
+La funcion [fill(row,col)] se encarga de ir llenando el cuadro, lo va haciendo de manera recursiva, vamos colocando un numero, si no va cumpliendo con las especificaciones [checa si las columnas, filas y diagonales suman lo mismo que la suma magica] lo desechamos, tambien checa que numeros ya se usaron, va marcando en el arreglo [possible[]] si un numero ya se uso.
+Las funciones checkRows, checkCols y checkDiags son las que se encargan de checar que la suma de las filas, columnas y diagonales de como resultado la suma magica.

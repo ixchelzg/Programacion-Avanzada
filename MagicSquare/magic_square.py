@@ -15,7 +15,7 @@ class MagicSquare:
 		for i in xrange(self.totalSqs):
 			self.possible.append(True)
 
-		print "El cuadro debe sumar ", self.adds, " y tiene un total de", self.totalSqs, " numeros que acomodar. "
+		print "La suma magica es ", self.adds, " y tiene un total de", self.totalSqs, " numeros que acomodar. "
 		print ' '
 		self.fill(0,0)
 		print 'El total de cuadrados magicos posibles de ',self.n,'x',self.n,'es',self.numsquares
