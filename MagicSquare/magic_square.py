@@ -1,5 +1,5 @@
 class MagicSquare:
-	"""Does a MagicSquare with the number of rows you ask for !!!"""
+	"""Crea un cuadrado magico con el numero de filas que le pidas ! """
 	square = []
 	possible = []
 	totalSqs = 0
