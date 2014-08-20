@@ -8,20 +8,17 @@ class MagicSquare:
 
 	def __init__(self, thenum):
 		self.n = thenum
-
-		#verything is possible at first
 		self.totalSqs = self.n * self.n
 		self.adds = self.n*((self.n*self.n)+1)/2
-
 		self.square = [[0 for x in xrange(self.n)] for x in xrange(self.n)]
-
+		#everything is possible at first
 		for i in xrange(self.totalSqs):
 			self.possible.append(True)
 
-		print "El cuadro debe sumar ", self.adds, " y tiene un total de ", self.totalSqs, " numeros que acomodar. "
+		print "El cuadro debe sumar ", self.adds, " y tiene un total de", self.totalSqs, " numeros que acomodar. "
 		print ' '
 		self.fill(0,0)
-		print 'El total de cuadrados magicos posibles de ',self.n,'x',self.n,'es ',self.numsquares
+		print 'El total de cuadrados magicos posibles de ',self.n,'x',self.n,'es',self.numsquares
 
 	def  fill(self, row, col):
 
@@ -94,5 +91,5 @@ class MagicSquare:
 
 
 # -----------------------------------------------------------------------
-thenum=int(raw_input('Escribe el numero de filas que quieres que contenga el cuadro magico : '))
+thenum=int(raw_input('Escribe el numero de filas que quieres que tenga el cuadro magico : '))
 magicsqr = MagicSquare(thenum)
