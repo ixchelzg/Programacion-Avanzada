@@ -89,7 +89,10 @@ class MagicSquare:
 
 		return True
 
-
 # -----------------------------------------------------------------------
-thenum=int(raw_input('Escribe el numero de filas que quieres que tenga el cuadro magico : '))
-magicsqr = MagicSquare(thenum)
+
+try:
+    thenum=int(raw_input('Escribe el numero de filas que quieres que tenga el cuadro magico : '))
+    magicsqr = MagicSquare(thenum)
+except ValueError:
+    print "Escribe un numero."
