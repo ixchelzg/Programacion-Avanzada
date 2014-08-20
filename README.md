@@ -1,0 +1,1 @@
+Este repositorio esta destinado a contener los programitas que haga en clase para la materia de Programacion Avanzada. Casi todo sera en python. Los folders contienen los proyectos que he realizado y tratare de hacer los nombres lo mas descriptivo posible.
