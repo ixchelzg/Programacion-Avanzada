@@ -9,11 +9,10 @@ class MagicSquare:
 	def __init__(self, thenum):
 		self.n = thenum
 		self.totalSqs = self.n * self.n
-		self.adds = self.n*((self.n*self.n)+1)/2
+		self.adds = self.n*(self.totalSqs+1)/2
 		self.square = [[0 for x in xrange(self.n)] for x in xrange(self.n)]
 		#everything is possible at first
-		for i in xrange(self.totalSqs):
-			self.possible.append(True)
+		self.possible = [True]*self.totalSqs
 
 		print "La suma magica es ", self.adds, " y tiene un total de", self.totalSqs, " numeros que acomodar. "
 		print ' '
